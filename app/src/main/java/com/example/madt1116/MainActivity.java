@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPostExecute(List<String> result)
             {
                 /*tvContent.setText(result);*/
+                tvContent.setText("Finished");
                 lvEurofxrefDailyFull= findViewById(R.id.lvEurofxrefDailyFull);
                 eurofxrefDailyFullList= new ArrayList<String>(result);
                 listAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, eurofxrefDailyFullList);
