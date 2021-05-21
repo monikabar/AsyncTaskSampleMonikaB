@@ -32,7 +32,7 @@ public class XmlParser {
                     String currencyName = cube.getAttribute("currency");
                     String currencyRate = cube.getAttribute("rate");
 
-                    result = currencyName + currencyRate;
+                    result = currencyName + ("   ") + currencyRate;
                     eurofxrefDailyFull.add(result);
 
                     }
